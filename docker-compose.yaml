@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  go:
+    image: golang
+    container_name: "pollarea_go"
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/go/src/app
+    working_dir: /go/src/app
+    command: go run main.go
