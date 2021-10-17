@@ -4,6 +4,7 @@ services:
   go:
     image: golang
     container_name: "pollarea_go"
+    restart: "always"
     ports:
       - 8080:8080
     volumes:
